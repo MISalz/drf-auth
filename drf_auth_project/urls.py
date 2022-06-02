@@ -21,7 +21,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('api/v1/snacking/', include('snacking.urls')),
     path('api-auth/', include('rest_framework.urls')),
-     path(
+    path(
         "api/token/", jwt_views.TokenObtainPairView.as_view(), name="token_obtain_pair"
     ),
     path(
